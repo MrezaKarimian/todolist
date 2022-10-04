@@ -1,14 +1,13 @@
 import "./App.css";
-import AddTodo from "./components/AddTodo";
-import TodoList from "./components/TodoList";
 import TodoProvider from "./todoContext/todoProvider";
+import Todo from "./components/Todo";
+
 
 function App() {
   return (
     <TodoProvider>
       <div className="App">
-        <AddTodo />
-        <TodoList />
+        <Todo />
       </div>
     </TodoProvider>
   );
